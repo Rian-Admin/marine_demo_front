@@ -332,7 +332,7 @@ const CameraStream: React.FC<CameraStreamProps> = ({
                 muted
                 playsInline
                 onError={handleVideoError}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             ) : (
               <Image
@@ -340,7 +340,7 @@ const CameraStream: React.FC<CameraStreamProps> = ({
                 src={streamUrl}
                 alt={`카메라 ${cameraId} 스트림`}
                 onError={handleImageError}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 unoptimized={true}
                 fill
               />
